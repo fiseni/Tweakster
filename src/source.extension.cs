@@ -7,12 +7,12 @@ namespace Tweakster
 {
     internal sealed partial class Vsix
     {
-        public const string Id = "0c8bd9fa-77d5-4563-ab57-9e01608c3d04";
-        public const string Name = "Tweaks";
+        public const string Id = "0c8bd9fa-77d5-4563-ab57-9e01608c3d05";
+        public const string Name = "PozTweaks";
         public const string Description = @"A collection of minor fixes and tweaks for Visual Studio to reduce the paper cuts and make you a happier developer";
         public const string Language = "en-US";
         public const string Version = "1.0";
-        public const string Author = "Mads Kristensen";
+        public const string Author = "Fati Iseni";
         public const string Tags = "";
     }
 }
