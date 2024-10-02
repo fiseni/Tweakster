@@ -2,13 +2,13 @@
 
 namespace Tweakster
 {
-    public class CollapseAttributeTagger : CollapseTagger
+    public class CollapseXmlCommentTagger : CollapseTagger
     {
-        private const string _shortCollapsedForm = "...";
+        private const string _shortCollapsedForm = "///";
 
-        public CollapseAttributeTagger(ITextBuffer buffer, bool isShortCollapsedForm)
+        public CollapseXmlCommentTagger(ITextBuffer buffer, bool isShortCollapsedForm)
             : base(buffer, isShortCollapsedForm, _shortCollapsedForm)
-        { 
+        {
         }
 
         protected override bool ShouldCollapse(ITextSnapshotLine line, out Span span)
@@ -20,7 +20,7 @@ namespace Tweakster
 
             clean = clean.TrimEnd();
 
-            return !string.IsNullOrEmpty(clean) && clean.StartsWith("[") && clean.EndsWith("]");
+            return !string.IsNullOrEmpty(clean) && clean.StartsWith("///");
         }
     }
 }

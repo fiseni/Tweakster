@@ -23,6 +23,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Debugger\NoStepDebuggingInDesignMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Debugger\Options.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CodeCleanupOnFormat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CollapseXmlCommentTaggerProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CollapseXmlCommentTagger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CollapseTagger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CollapseAttributeTagger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CollapseAttributeTaggerProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tweaks\Editor\CopyWithoutIndentation.cs" />

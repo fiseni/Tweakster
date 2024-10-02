@@ -32,6 +32,18 @@ namespace Tweakster
         public bool CollapseMemberAttributesShortForm { get; set; } = true;
 
         [Category(_editor)]
+        [DisplayName("Enable collapsing XML comments")]
+        [Description("It provides the possibility to collapse XML comments into one collapsed line.")]
+        [DefaultValue(true)]
+        public bool CollapseXmlComments { get; set; } = true;
+
+        [Category(_editor)]
+        [DisplayName("Short form for XML comment collapse")]
+        [Description("Display short text (///) for the collapsed form of XML comments.")]
+        [DefaultValue(true)]
+        public bool CollapseXmlCommentsShortForm { get; set; } = true;
+
+        [Category(_editor)]
         [DisplayName("Enable mouse wheel zoom")]
         [Description("Enable zooming in the editor when hitting Ctrl+MouseScroll")]
         [DefaultValue(false)]
